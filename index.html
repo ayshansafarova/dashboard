@@ -1,0 +1,529 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  </head>
+
+  <body>
+    <!-- header navbar -->
+    <nav class="header-navbar navbar navbar-expand-md navbar-dark sticky-top flex-md-nowrap p-0 justify-content-between">
+      <a class="navbar-brand col-sm-4 col-md-3 col-lg-2 mr-0" href="#">
+        <img src="./assets/icons/avatar.png" width="30" height="30" class="d-inline-block align-top rounded-circle mx-2 my-3" alt="">
+        <span class="d-inline-block py-4">Hoang Nguyen</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav px-3 w-50">
+          <li class="nav-item mr-4">
+            <img class="" src="./assets/icons/head.png">
+          </li>
+          <li class="nav-item mr-4">
+            <img class="" src="./assets/icons/chat.png">
+          </li>
+          <li class="nav-item mr-4">
+            <img class="shake" src="./assets/icons/note.png">
+          </li>
+        </ul>
+      </div>
+
+      <span class="w-25 d-none d-md-block">
+        <img src="./assets/icons/headicon.png">
+      </span>
+
+<!-- navbar search -->
+      <form class="form-inline mr-2">
+        <input class="form-control form-control-dark" type="text" placeholder="Type for search" aria-label="Search" aria-describedby="basic-addon1">
+        <button class="btn btn-light input-group-addon" type="submit" id="basic-addon1">
+          <img src="./assets/icons/search.png" width="18">
+        </button>
+      </form>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+
+      <!-- sidebar sticky -->
+        <nav class="col-md-3 col-lg-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active pb-3 pt-md-5" href="#">
+                  <span class="p-3">
+                    <img src="./assets/icons/dash.png">
+                  </span>
+                  Dashboard
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pt-3 pb-3" href="#">
+                  <span class="p-3">
+                    <img src="./assets/icons/course.png">
+                  </span>
+                  Course
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pt-3 pb-3" href="#">
+                  <span class="p-3">
+                    <img src="./assets/icons/qa.png">
+                  </span>
+                  Q&A
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pt-3 pb-3" href="#">
+                  <span class="p-3">
+                    <img src="./assets/icons/news.png">
+                  </span>
+                  News
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+      <!-- main page -->
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+          
+          <div class="row user-header d-flex flex-row justify-content-between">
+            <div class="float-left p-4">
+              <div class="clearfix">
+                <div class="float-left p-2">
+                  <img src="./assets/icons/avatar.png" class="rounded-circle">
+                </div>
+                <div class="float-right p-2 d-flex flex-column">
+                  <div class="p-1 d-flex">
+                    <span class="text-uppercase user-name">Hoang Nguyen</span>
+                    <span class="user-rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </span>
+                  </div>
+                  <div class="p-1">
+                    <span>Student • </span> 
+                    <span >
+                      <a href="#">Learn more</a>
+                    </span>
+                  </div>
+                  <div class="p-1">
+                    <span class="font-weight-normal">
+                      <i class="fas fa-award"></i>
+                      <strong>8,782</strong> exp
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="float-right p-md-5 p-3">
+              <button class="btn btn-light rounded-circle edit-btn" >
+                <img src="./assets/icons/pen.png" width="18">
+              </button>        
+              <button class="btn btn-success rounded-circle" >
+                <img src="./assets/icons/exit.png" width="18">
+              </button>
+            </div>
+          </div>
+          <div class="row bg-light">
+            <div class="col-12 p-0 ">
+              <nav class="main-nav">
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="knowledge" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">
+                    <span>Knowledge</span>
+                  </a>
+                  <a class="nav-item nav-link" id="course" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">
+                    <span>Course<span>
+                  </a>
+                  <a class="nav-item nav-link" id="exam" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">
+                    <span>Exam</span>
+                  </a>
+                  <a class="nav-item nav-link" id="qa" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="false">
+                    <span>Q&A</span>
+                  </a>            
+                  <a class="nav-item nav-link" id="news" data-toggle="tab" href="#tab-5" role="tab" aria-controls="tab-5" aria-selected="false">
+                    <span>News</span>
+                  </a>            
+                  <a class="nav-item nav-link" id="activity" data-toggle="tab" href="#tab-6" role="tab" aria-controls="tab-6" aria-selected="false">
+                    <span>Activity</span>
+                  </a>            
+                  <a class="nav-item nav-link" id="friends" data-toggle="tab" href="#tab-7" role="tab" aria-controls="tab-7" aria-selected="false">
+                    <span>Friends</span>
+                  </a>
+                </div>
+              </nav>
+              <div class="tab-content py-3 px-3" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="knowledge">
+
+                <!-- inside nav tabs -->
+                  <div class="row">
+                    <div class="col-lg-4 col-12 pt-3">
+                      <nav class="course-nav inside-nav">
+                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                          <a class="nav-item nav-link active" id="done-course" data-toggle="tab" href="#tab-done-course" role="tab" aria-controls="tab-done-course" aria-selected="true">
+                            <div class="header number">12</div>
+                            <span>Done course</span>
+                          </a>
+                          <a class="nav-item nav-link" id="undone-course" data-toggle="tab" href="#tab-undone-course" role="tab" aria-controls="tab-undone-course" aria-selected="false">
+                            <div class="header number">3</div>
+                            <span>Unfinished course<span>
+                          </a>
+                        </div>
+                      </nav>
+                      <div class="tab-content course-tab inside-tab px-3 px-sm-0" id="nav-tabContent">          
+                        <div class="tab-pane fade show active" id="tab-done-course" role="tabpanel" aria-labelledby="done-course">
+                          <div class="card">
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item p-md-3">Math</li>
+                              <li class="list-group-item p-md-3">Physics</li>
+                              <li class="list-group-item p-md-3">English</li>
+                              <li class="list-group-item p-md-3">Chemistry</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link float-right">
+                              Show more
+                              <i class="ml-1 fa fa-angle-double-down"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-undone-course" role="tabpanel" aria-labelledby="undone-course">
+                          <div class="card">
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item p-md-3">unfinished</li>
+                              <li class="list-group-item p-md-3">unfinished</li>
+                              <li class="list-group-item p-md-3">unfinished</li>
+                            </ul>
+                           <!-- <div class="card-body">
+                               <a href="#" class="card-link">
+                              Show more
+                              <i class="fa fa-angle-double-down"></i>
+                              </a> 
+                            </div>-->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-12 pt-3">
+                      <nav class="qa-nav inside-nav">
+                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                          <a class="nav-item nav-link active" id="asked-q" data-toggle="tab" href="#tab-asking-q" role="tab" aria-controls="tab-asking-q" aria-selected="true">
+                            <div class="header number">27</div>
+                            <span>Asking questions</span>
+                          </a>
+                          <a class="nav-item nav-link" id="answered-q" data-toggle="tab" href="#tab-answered-q" role="tab" aria-controls="tab-answered-q" aria-selected="false">
+                            <div class="header number">7</div>
+                            <span>Answered questions<span>
+                          </a>
+                        </div>
+                      </nav>
+                      <div class="tab-content qa-tab inside-tab px-3 px-sm-0" id="nav-tabContent">          
+                        <div class="tab-pane fade show active" id="tab-asking-q" role="tabpanel" aria-labelledby="asked-q">
+                          <div class="card">
+                            <ul class="list-group list-group-flush">
+                              <li class=" p-md-3">
+                                <span class="mr-3 ml-1" >
+                                  <i class="far fa-comment"></i>
+                                  3
+                                </span>
+                              How to make a good logo
+                              </li>
+                              <li class="list-group-item p-md-3">
+                                <span class="mr-3 ml-1" >
+                                  <i class="far fa-comment"></i>
+                                  12
+                                </span>
+                              What are the best mobile apps for..
+                              </li>
+                              <li class="list-group-item p-md-3">
+                                <span class="mr-3 ml-1" >
+                                  <i class="far fa-comment"></i>
+                                  41
+                                </span>
+                              What is difference between UI..
+                              </li>
+                              <li class="list-group-item p-md-3">
+                                <span class="mr-3 ml-1" >
+                                  <i class="far fa-comment"></i>
+                                  123
+                                </span>
+                              What logos include..
+                              </li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link float-right">
+                              Show more
+                              <i class="ml-1 fa fa-angle-double-down"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-answered-q" role="tabpanel" aria-labelledby="answered-q">
+                          <div class="card">
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item p-md-3">answered</li>
+                              <li class="list-group-item p-md-3">answered</li>
+                              <li class="list-group-item p-md-3">answered</li>
+                              <li class="list-group-item p-md-3">answered</li>
+                            </ul>
+                            <div class="card-body">
+                               <a href="#" class="card-link float-right">
+                              Show more
+                              <i class="ml-1 fa fa-angle-double-down"></i>
+                              </a> 
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-12 pt-3">
+                      <nav class="exam-nav inside-nav">
+                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                          <a class="nav-item nav-link active" id="following-exam" data-toggle="tab" href="#tab-following" role="tab" aria-controls="tab-following" aria-selected="true">
+                            <div class="header number">19</div>
+                            <span>Following exams</span>
+                          </a>
+                          <a class="nav-item nav-link" id="done-exam" data-toggle="tab" href="#tab-done" role="tab" aria-controls="tab-done" aria-selected="false">
+                            <div class="header number">88</div>
+                            <span>Done exams<span>
+                          </a>
+                        </div>
+                      </nav>
+                      <div class="tab-content exam-tab inside-tab px-3 px-sm-0" id="nav-tabContent">          
+                        <div class="tab-pane fade show active" id="tab-following" role="tabpanel" aria-labelledby="following-exam">
+                          <div class="card">
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item d-flex flex-row p-md-3">
+                                <span class="mr-3 ml-1 progress-span" >
+                                  <div class="progress progress-bar-vertical">
+                                    <div class="progress-bar percentage-progress active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" >
+                                      <span class="percentage-bar number">70</span>
+                                      <span class="percent">%</span>
+                                    </div>
+                                  </div>
+                                </span>
+                              Junior web designer
+                              </li>
+                              <li class="list-group-item d-flex flex-row p-md-3">
+                                <span class="mr-3 ml-1 progress-span" >
+                                  <div class="progress progress-bar-vertical">
+                                    <div class="progress-bar percentage-progress active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" >
+                                      <span class="percentage-bar number">20</span>
+                                      <span class="percent">%</span>
+                                    </div>
+                                  </div>
+                                </span>
+                              Which is the best way to pass the PMP..
+                              </li>
+                              <li class="list-group-item d-flex flex-row p-md-3">
+                                <span class="mr-3 ml-1 progress-span" >
+                                  <div class="progress progress-bar-vertical">
+                                    <div class="progress-bar percentage-progress active" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" >
+                                      <span class="percentage-bar number">35</span>
+                                      <span class="percent">%</span>
+                                    </div>
+                                  </div>
+                                </span>
+                              What are great examples of UI/UX..
+                              </li>
+                              <li class="list-group-item d-flex flex-row p-md-3">
+                                <span class="mr-3 ml-1 progress-span" >
+                                  <div class="progress progress-bar-vertical">
+                                    <div class="progress-bar percentage-progress active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
+                                      <span class="percentage-bar number">90</span>
+                                      <span class="percent">%</span>
+                                    </div>
+                                  </div>
+                                </span>
+                              What is consistency important in de..
+                              </li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link float-right">
+                              Show more
+                              <i class="ml-1 fa fa-angle-double-down"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-done" role="tabpanel" aria-labelledby="done-exam">
+                          <div class="card">
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item p-md-3">done</li>
+                              <li class="list-group-item p-md-3">done</li>
+                              <li class="list-group-item p-md-3">done</li>
+                              <li class="list-group-item p-md-3">done</li>
+                            </ul>
+                            <div class="card-body">
+                               <a href="#" class="card-link float-right">
+                              Show more
+                              <i class="ml-1 fa fa-angle-double-down"></i>
+                              </a> 
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                <!-- charts section which includes aslo friend activity-->
+                  <div class="row mt-3 m-0 charts-section">
+                    <div class="col-lg-4 col-12 pt-3 d-flex flex-column border-right">
+                        <h6>Experience gained</h6>
+                          <div class="d-flex flex-row justify-content-between bars text-capitalize">
+                            <div class="px-2">
+                              <div class="progress progress-bar-vertical">
+                                <div class="progress-bar given active" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" >
+                                  <span class="sr-only">66% Complete</span>
+                                </div>
+                              </div>
+                              <p>Course</p>
+                            </div>
+                            <div class="px-2">
+                              <div class="progress progress-bar-vertical">
+                                <div class="progress-bar given active" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" >
+                                  <span class="sr-only">33% Complete</span>
+                                </div>
+                              </div>
+                              <p>Question</p>
+                            </div>
+                            <div class="px-2">
+                              <div class="progress progress-bar-vertical">
+                                <div class="progress-bar given active" role="progressbar" aria-valuenow="51" aria-valuemin="0" aria-valuemax="100" >
+                                  <span class="sr-only">51% Complete</span>
+                                </div>
+                              </div>
+                              <p>Exam</p>
+                            </div>
+                            <div class="px-2 text-center">
+                              <span class="last-month-number">+
+                              <span class="number">142</span>
+                              </span>
+                              <p style="font-size: 12px;">Last month</p>
+                            </div>
+                          </div>
+                          <div class="pt-4 border-top">
+                            <h6 id="experience">Experience per day</h6>
+                              <canvas class="my-2" id="myChart"></canvas>
+                          </div>
+                    </div>
+                    <div class="col-lg-8 col-12 px-0 border-right activity-general">
+                            <div class="card border-0">
+                              <div class="card-body py-3 border-bottom">
+                                <h6 class="card-title text-capitalize mb-0">friend activity</h6>
+                              </div>
+                              <ul class="list-group list-group-flush">
+                                <li class="list-group-item p-md-3">
+                                  <div class="float-left">
+                                    <img src="./assets/icons/fr1.png" class="rounded-circle mr-2">
+                                    <span class="text-uppercase friend-name">Shawn Peterson</span>
+                                    <span>Finished the course: </span>
+                                    <a class="card-link">Basic for UX designer</a>
+                                  </div>
+                                  <div class="float-right font-weight-normal">
+                                    <span class="d-inline-block py-1">
+                                      <i class="far fa-clock"></i>
+                                      9:30 PM
+                                    </span>
+                                  </div>
+                                </li>                              
+                                <li class="list-group-item p-md-3">
+                                  <div class="float-left">
+                                    <img src="./assets/icons/fr2.png" class="rounded-circle mr-2">
+                                    <span class="text-uppercase friend-name">Mary V. Robinson</span>
+                                    <span>Asked question: </span>
+                                    <a class="card-link">What is best grid for desktop web</a>
+                                  </div>
+                                  <div class="float-right font-weight-normal">
+                                    <span class="d-inline-block py-1">
+                                      <i class="far fa-clock"></i>
+                                      7:45 PM
+                                    </span>
+                                  </div>
+                                </li>                              
+                                <li class="list-group-item p-md-3">
+                                  <div class="float-left">
+                                    <img src="./assets/icons/fr3.png" class="rounded-circle mr-2">
+                                    <span class="text-uppercase friend-name">Joe Ramos</span>
+                                    <span>Finished the exam: </span>
+                                    <a class="card-link">Junior web designer</a>
+                                  </div>
+                                  <div class="float-right font-weight-normal">
+                                    <span class="d-inline-block py-1">
+                                      <i class="far fa-clock"></i>
+                                      9:20 PM
+                                    </span>
+                                  </div>
+                                </li>                              
+                                <li class="list-group-item p-md-3">
+                                  <div class="float-left">
+                                    <img src="./assets/icons/fr4.png" class="rounded-circle mr-2">
+                                    <span class="text-uppercase friend-name">Sean Walker</span>
+                                    <span>Answered question: </span>
+                                    <a class="card-link">How to make good logo</a>
+                                  </div>
+                                  <div class="float-right font-weight-normal">
+                                    <span class="d-inline-block py-1">
+                                      <i class="far fa-clock"></i>
+                                      11:15 AM
+                                    </span>
+                                  </div>
+                                </li>
+                              </ul>
+                              <div class="card-body">
+                                <a href="#" class="card-link float-right">
+                                Show more
+                                <i class="ml-1 fa fa-angle-double-down"></i>
+                                </a>
+                              </div>
+                            </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="course">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                </div>
+                <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="exam">
+                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going 
+                </div>
+                <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="qa">The standard chunk of Lorem Ipsum used since the 1500s is reproduced
+                </div>          
+                <div class="tab-pane fade" id="tab-5" role="tabpanel" aria-labelledby="news">reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de
+                </div>          
+                <div class="tab-pane fade" id="tab-6" role="tabpanel" aria-labelledby="activity">Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, 
+                </div>          
+                <div class="tab-pane fade" id="tab-7" role="tabpanel" aria-labelledby="friends">accompanied by English versions from the 1914 translation by H. Rackham.
+                </div>
+            
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./assets/popper.min.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script src="index.js"></script>
+
+  </body>
+</html>
